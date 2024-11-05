@@ -1,5 +1,7 @@
 import {NextResponse} from 'next/server'
 
+export const runtime = 'edge';
+
 export async function DELETE(req: Request) {
     const {beeperToken, flyToken, name, onFly} = await req.json()
 
