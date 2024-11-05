@@ -1,6 +1,8 @@
 import {NextResponse} from 'next/server'
 import {gql, GraphQLClient} from 'graphql-request'
 
+export const runtime = 'edge';
+
 export async function POST(req: Request) {
 
     const {beeperToken, flyToken, bridge, region} = await req.json()
